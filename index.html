@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuhOne</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+        <a href="#" class="header__logo">
+            <img src="./media/logo.svg" alt="" class="header__logo-icon">
+        </a>
+
+        <div class="header__right">
+
+            <div class="header__contacts">
+
+                <a href="tel:+71112223344" class="header__contact">
+                        <img class="header__contact-icon" src="./media/tel.svg" alt="">
+                        <span>8 (111) 222-33-44</span>
+                </a>
+
+                <div class="header__contact">
+                    <img class="header__contact-icon" src="./media/watch.svg" alt="">
+                    <span>Пн-Пт 10:00-18:00</span>
+                </div>
+
+                <a href="mailto:order@buhone.ru" class="header__contact">
+                    <img class="header__contact-icon" src="./media/email.svg" alt="">
+                    <span>order@buhone.ru</span>
+                </a>
+
+                <div class="header__contact">
+                    <img class="header__contact-icon" src="./media/location.svg" alt="">
+                    <span>Невский пр. 130</span>
+                </div>
+            </div>
+        
+
+            <nav class="header__nav" aria-label="Основная навигация">
+                <a href="#" class="header__nav-link">Главная</a>
+                <a href="#" class="header__nav-link">Услуги</a>
+                <a href="#" class="header__nav-link">Кейсы</a>
+                <a href="#" class="header__nav-link">О компании</a>
+                <a href="#" class="header__nav-link">Контакты</a>
+            </nav>
+            
+        </div>
+    </div>
+
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__title">
+                Бухгалтерские услуги<br>
+                в Санкт-Петербурге
+            </div>
+
+            <a href="#" class="hero__button">
+                Наша презентация
+            </a>
+        </div>
+
+        <div class="hero__bottom">
+            <div class="hero__dots" aria-label="Слайдер">
+                <button class="hero__dot" type="button" aria-label="Слайд 1"></button>
+                <button class="hero__dot" type="button" aria-label="Слайд 2"></button>
+                <button class="hero__dot hero__dot--active" type="button" aria-label="Слайд 3"></button>
+                <button class="hero__dot" type="button" aria-label="Слайд 4"></button>
+            </div>
+
+            <div class="hero__arrows">
+                <button class="hero__arrow" type="button" aria-label="Предыдущий слайд">
+                    <img src="./media/arrow-back.svg" alt="" class="hero__arrow-icon">
+                </button>
+                <button class="hero__arrow hero__arrow--active" type="button" aria-label="Следующий слайд">
+                    <img src="./media/arrow-front.svg" alt="" class="hero__arrow-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <section class="contacts">
+    <div class="container contacts__inner">
+        <div class="contacts__info">
+            <div class="contacts__title">
+                Связь с нами
+            </div>
+            <p class="contacts__text">
+                У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!
+            </p>
+
+            <div class="contacts__links">
+                <a href="tel:71112223344" class="contacts__link">
+                    <img src="./media/tel2.svg" alt="" class="contacts__icon">
+                    <span>+7 (111) 222-33-44</span>
+                </a>
+                <a href="mailto:order@bu-one.ru" class="contacts__link">
+                    <img src="./media/email2.svg" alt="" class="contacts__icon">
+                    <span>order@bu-one.ru</span>
+                </a>  
+            </div>
+
+        </div>
+
+        <form action="#" class="contacts__form" method="post">
+            <div class="contacts__row">
+                <label class="contacts__field">
+                    <span class="contacts__label">Имя</span>
+                    <input 
+                    type="text" 
+                    class="contacts__input"
+                    name="name"
+                    placeholder="Иван"
+                    required>
+                </label>
+
+                <label class="contacts__field">
+                    <span class="contacts__label">Фамилия</span>
+                    <input 
+                    type="text" 
+                    class="contacts__input"
+                    name="surname"
+                    placeholder="Иванов"
+                    required>
+                </label>
+            </div>
+
+                <label class="contacts__field contacts__field--message">
+                    <span class="contacts__label">Сообщение</span>
+                    <textarea 
+                    class="contacts__textarea"
+                    name="message" 
+                    placeholder="Ваше сообщение"
+                    required
+                    ></textarea>
+                </label>
+
+                <button class="contacts__submit" type="submit">
+                    Отправить сообщение
+                </button>
+        </form>
+    </div>
+  </section>
+</main>
+
+<div class="popup" id="successPopup" aria-hidden="true">
+  <div class="popup__overlay"></div>
+
+  <div class="popup__content" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <button class="popup__close" type="button" aria-label="Закрыть попап">
+      ×
+    </button>
+
+    <div class="popup__title" id="popupTitle">
+      Спасибо!
+    </div>
+
+    <p class="popup__text">
+      Ваше сообщение успешно отправлено.
+    </p>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <p class="footer__copyright">
+            2019 (с) Все права защищены. БухОне.ру
+        </p>
+        <div class="footer__developer">
+            Разработано: BuhOne
+        </div>
+    </div>
+</footer>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
